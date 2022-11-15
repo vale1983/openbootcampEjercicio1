@@ -1,29 +1,28 @@
 public class Main {
+    public static int suma(int a, int b, int c) {
+        return(a + b + c);
+    }
+
 
     public static void main(String[] args) {
-        int resultado;
-        resultado = suma(10, 20, 40);
-
-        System.out.println(resultado);
-
-        Coche miCoche= new Coche();
-        miCoche.SumarPuerta();
-        miCoche.SumarPuerta();
-
-        System.out.println(miCoche.puertas);
-
-    }
-    public static int suma(int a, int b, int c) {
-        return a + b + c;
-
-
+        int a=1, b=2,c=3;
+        System.out.println(suma(a,b,c));
     }
 }
 
-class Coche {
-    public int puertas = 2;
 
-    public void SumarPuerta() {
+public class Main {
+    public static void main(String[] args) {
+        Coche micoche= new Coche();
+        micoche.MasPuerta();
+        System.out.println(micoche.puertas);
+    }
+
+}
+class Coche{
+    public int puertas=4;
+
+    public void MasPuerta() {
         this.puertas++;
     }
 }
